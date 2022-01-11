@@ -5,12 +5,10 @@ public class Fluxo {
         System.out.println("Ini do main");
         try {
             metodo1();
-        }catch(ArithmeticException ex) {
+        }catch(ArithmeticException | NullPointerException ex) {
         	System.out.println(ex.getMessage());
         	ex.printStackTrace();
-        } catch(NullPointerException e) {
-        	System.out.println(e.getMessage());
-        }
+        } 
         System.out.println("Fim do main");
     }
 
