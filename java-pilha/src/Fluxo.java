@@ -5,7 +5,7 @@ public class Fluxo {
         System.out.println("Ini do main");
         try {
             metodo1();
-        }catch(ArithmeticException | NullPointerException ex) {
+        }catch(ArithmeticException | NullPointerException | MinhaExcecao ex) {
         	System.out.println(ex.getMessage());
         	ex.printStackTrace();
         } 
@@ -20,7 +20,7 @@ public class Fluxo {
 
     private static void metodo2() {
         System.out.println("Ini do metodo2");
-      throw new ArithmeticException("deu ruim aaqui");
+      throw new MinhaExcecao("deu ruim aaqui");
 
 //        ArithmeticException exception = new ArithmeticException("deu ruim aaqui");
 //        throw exception;
