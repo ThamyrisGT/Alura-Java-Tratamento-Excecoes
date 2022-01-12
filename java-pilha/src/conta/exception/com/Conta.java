@@ -24,7 +24,7 @@ public abstract class Conta {
 		this.saldo -= valor;
 	}
 
-	public void transfere(double valor, Conta destino) {
+	public void transfere(double valor, Conta destino) throws SaldoInsuficienteException {
 		this.saca(valor); // só vai pra próxima linha se conseguir fazer o método saca
 		destino.deposita(valor);
 	}
