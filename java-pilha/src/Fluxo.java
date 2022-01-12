@@ -20,14 +20,12 @@ public class Fluxo {
 
     private static void metodo2() {
         System.out.println("Ini do metodo2");
-        for(int i = 1; i <= 5; i++) {
-            System.out.println(i);
-            Conta c = null;
-            c.deposita();
-            //int a =i/0;
+      throw new ArithmeticException("deu ruim aaqui");
 
-        }
-        System.out.println("Fim do metodo2");        
+//        ArithmeticException exception = new ArithmeticException("deu ruim aaqui");
+//        throw exception;
+        
+        //System.out.println("Fim do metodo2");        
     }
 
 }
